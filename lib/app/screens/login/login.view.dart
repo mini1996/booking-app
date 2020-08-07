@@ -107,12 +107,18 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
       autovalidate: _controller.isAutoValidateMode,
       child: Column(
         children: <Widget>[
-          customSizeBox(height: 80.0),
+          customSizeBox(height: 150.0),
           Container(
             //height: 50.0,
-            child: Text("BOOKING APP"),
+            child: Text(
+              "BOOKING APP",
+              style: TextStyle(
+                  color: AppColors.textPrimaryColor,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
           ),
-          customSizeBox(height: 80.0),
+          customSizeBox(height: 50.0),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 40.0),
             child: Column(
