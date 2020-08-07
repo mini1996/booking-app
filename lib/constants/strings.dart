@@ -2,7 +2,7 @@ class Strings {
   Strings._();
 
   //General
-  static const String appName = "UNSWORTH";
+  static const String appName = "BOOKING APP";
 
   static const String errorMessage =
       "Some error has occurred. Please try again later";
@@ -11,6 +11,7 @@ class Strings {
   static const String fillRequiredField = "Please fill all required field";
 
   //Login
+
   static const String loginButton = "Login";
   static const String usernameEmptyMessage = 'Please enter email';
   static const String passwordEmptyMessage = 'Please enter password';
@@ -66,7 +67,7 @@ class Strings {
   static const String fetchingContainers = 'Fetching Containers...';
   static const String fetchingSuccess = "Fetching Successful";
   static const String storingBookings = 'Bookings...';
-  static const String storingContainers= 'Containers...';
+  static const String storingContainers = 'Containers...';
   static const String fetchingUserCount = 'Fetching user count';
   static const String storingUserCount = 'Storing user count';
   static const String errorTemplate = 'Some error has occured while ';
@@ -77,8 +78,10 @@ class Strings {
   static const String stage_3 = 'LOADING';
   static const String stage_4 = 'CONTAINERS';
 
-  static const String inWareHouseMessage = '“WAITING FOR OPERATIONS TO PASS VEHICLE ON LOADING STAGE”';
-  static const String loadingMessage = '“WAITING FOR OPERATIONS TO APPROVE PHOTOS”';
+  static const String inWareHouseMessage =
+      '“WAITING FOR OPERATIONS TO PASS VEHICLE ON LOADING STAGE”';
+  static const String loadingMessage =
+      '“WAITING FOR OPERATIONS TO APPROVE PHOTOS”';
 
   static const String imageLimitError =
       'You have exceed the limit, Please delete the image to continue';

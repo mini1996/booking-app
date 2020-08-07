@@ -111,14 +111,14 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
           Container(
             //height: 50.0,
             child: Text(
-              "BOOKING APP",
+              Strings.appName,
               style: TextStyle(
                   color: AppColors.textPrimaryColor,
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
             ),
           ),
-          customSizeBox(height: 50.0),
+          customSizeBox(height: 40.0),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 40.0),
             child: Column(
@@ -170,6 +170,21 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
                     // _controller.onLoginPressed(context);
                   },
                 ),
+                customSizeBox(height: 2.0),
+                InkWell(
+                    onTap: () async {
+                      //  _controller.dispose();
+                      // var response = await _router
+                      //     .navigate(Pages.forgotPasswordScreen, context, {});
+                      // _controller.formKey = GlobalKey<FormState>();
+                    },
+                    child: Container(
+                        alignment: Alignment.centerRight,
+                        child: Text(
+                          Strings.forgotPasswordButton,
+                          style: TextStyle(
+                              color: AppColors.textPrimaryColor, fontSize: 14),
+                        ))),
                 customSizeBox(height: 15.0),
                 Text(
                   _controller.errorMessage ?? "",
